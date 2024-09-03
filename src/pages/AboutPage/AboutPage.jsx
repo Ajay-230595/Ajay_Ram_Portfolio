@@ -1,0 +1,130 @@
+import ActionBox from "../../Components/ActionBox/ActionBox";
+import Circle from "../../Components/Circle/Circle";
+import MainContainer from "../../Components/MainContainer/MainContainer";
+import Navbar from "../../Components/Navbar/Navbar";
+import style from "./AboutPage.module.css";
+import ContainerTitle from "../../Components/ComponentTitle/ComponentTitle";
+import { motion } from "framer-motion";
+
+function AboutPage() {
+  return (
+    <div>
+      <Navbar />
+      <Circle bottom={"19rem"} right={"-25rem"} />
+      <MainContainer>
+        <div className={style.about_component}>
+          <ContainerTitle title={"About me"} />
+          <div className={style.timeline_container}>
+            <h1 className={style.timeline_title}>My Education</h1>
+            <div className={style.timeline_box}>
+              <div
+                className={`${style.action_container} ${style.left_container}`}
+              >
+                <ActionBox
+                  isleft={true}
+                  timeline={"2011 - 2012"}
+                  timeline_title={"High School "}
+                  location={"Sai Holy Faith High School, Mumbai"}
+                  details={
+                    "Completed my High School from Maharashtra State Board with 66%."
+                  }
+                />
+              </div>
+              <div
+                className={`${style.action_container} ${style.right_container}`}
+              >
+                <ActionBox
+                  isleft={false}
+                  timeline={"2013 - 2014"}
+                  timeline_title={"Senior Secondary (10+2)"}
+                  location={"Yashwant Rao Chavan, Mumbai"}
+                  details={
+                    "Completed my Secondary (10+2) from Maharashtra State Board with 47%."
+                  }
+                />
+              </div>
+              <div
+                className={`${style.action_container} ${style.left_container}`}
+              >
+                <ActionBox
+                  isleft={true}
+                  timeline={"2018 - 2019"}
+                  timeline_title={"Bachelors in Computer Science "}
+                  location={"Rajiv Gandhi College. Mumbai University"}
+                  details={
+                    "Completed my Bachelor degree in Computer Science from mumbai University with 7.50 Pointer."
+                  }
+                  img={
+                    "https://www.gpkotdwar.org.in/images/gallery/l8THHpO6.jpg"
+                  }
+                />
+              </div>
+              <div
+                className={`${style.action_container} ${style.right_container}`}
+              >
+                {/* <ActionBox
+                  isleft={false}
+                  timeline={"2022 - 2025"}
+                  timeline_title={"Bachelors in Computer Applications"}
+                  location={"University Of Mysore"}
+                  details={
+                    "Currently completing my Bachelors Degree in Computer Applications (Online) from Mysore University"
+                  }
+                  img={
+                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq25wBcbXkIUAg1yyYvwNMT--QIk76V1QFkI0rIdt5Kw&s"
+                  }
+                /> */}
+              </div>
+            </div>
+          </div>
+          <div className={style.timeline_container}>
+            <h1 className={style.timeline_title}>My Experience</h1>
+            <div className={style.timeline_box}>
+              <div
+                className={`${style.action_container} ${style.left_container}`}
+              >
+                <ActionBox
+                  isleft={true}
+                  timeline={"2022 - 2023"}
+                  timeline_title={"TGT Teacher"}
+                  location={"Bal Bharti Public School, Kotdwara"}
+                  details={
+                    "I have worked as a junior teacher in school and also worked in management. "
+                  }
+                />
+              </div>
+              <div
+                className={`${style.action_container} ${style.right_container}`}
+              >
+                <ActionBox
+                  isleft={false}
+                  timeline={"2023 - 2024"}
+                  timeline_title={"Apprentice Engineer "}
+                  location={"Bharat Electronics Limited, Ktd."}
+                  details={
+                    "Worked as an Apprentice Engineer for 1 year under BEL Kotdwara, Ministry of External Affairs"
+                  }
+                />
+              </div>
+              <div
+                className={`${style.action_container} ${style.left_container}`}
+              >
+                <ActionBox
+                  isleft={false}
+                  timeline={"2024"}
+                  timeline_title={"PGT Teacher"}
+                  location={"Navyug Public School, Kotdwara"}
+                  details={
+                    "I am working as an IT Teacher at senior secondary level."
+                  }
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </MainContainer>
+    </div>
+  );
+}
+
+export default AboutPage;
