@@ -61,20 +61,7 @@ function AboutPage() {
               </div>
               <div
                 className={`${style.action_container} ${style.right_container}`}
-              >
-                {/* <ActionBox
-                  isleft={false}
-                  timeline={"2022 - 2025"}
-                  timeline_title={"Bachelors in Computer Applications"}
-                  location={"University Of Mysore"}
-                  details={
-                    "Currently completing my Bachelors Degree in Computer Applications (Online) from Mysore University"
-                  }
-                  img={
-                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq25wBcbXkIUAg1yyYvwNMT--QIk76V1QFkI0rIdt5Kw&s"
-                  }
-                /> */}
-              </div>
+              ></div>
             </div>
           </div>
           <div className={style.timeline_container}>
@@ -85,11 +72,11 @@ function AboutPage() {
               >
                 <ActionBox
                   isleft={true}
-                  timeline={"2022 - 2023"}
-                  timeline_title={"TGT Teacher"}
-                  location={"Bal Bharti Public School, Kotdwara"}
+                  timeline={"2019 - 2021"}
+                  timeline_title={"Customer relationship manager"}
+                  location={"ICICI Lombard General Insurance"}
                   details={
-                    "I have worked as a junior teacher in school and also worked in management. "
+                    "I have worked as a junior associate in ICICI Lombard. "
                   }
                 />
               </div>
@@ -98,11 +85,11 @@ function AboutPage() {
               >
                 <ActionBox
                   isleft={false}
-                  timeline={"2023 - 2024"}
-                  timeline_title={"Apprentice Engineer "}
-                  location={"Bharat Electronics Limited, Ktd."}
+                  timeline={"2021 - 2023"}
+                  timeline_title={"Process Associate "}
+                  location={"Tata Consultancy Services"}
                   details={
-                    "Worked as an Apprentice Engineer for 1 year under BEL Kotdwara, Ministry of External Affairs"
+                    "Worked as an Process Associate in Tata Neu application."
                   }
                 />
               </div>
@@ -112,10 +99,10 @@ function AboutPage() {
                 <ActionBox
                   isleft={false}
                   timeline={"2024"}
-                  timeline_title={"PGT Teacher"}
-                  location={"Navyug Public School, Kotdwara"}
+                  timeline_title={"Process Associate"}
+                  location={"One Point One Solution"}
                   details={
-                    "I am working as an IT Teacher at senior secondary level."
+                    "I am working as an Process Associate in Tata Neu application."
                   }
                 />
               </div>
